@@ -1,0 +1,31 @@
+{
+  "name": "cartridgepm_cli",
+  "version": "0.0.1-alpha",
+  "description": "Cartridge package manage, is a PM that uses docker as it is main engine, to insure isolation and ability to carbon copy your packages for any machine that you use.",
+  "main": "index.js",
+  "scripts": {
+    "build_linux_x64": "pkg index.js --output ./bin/cpm_linux_x64  --targets node8-linux-x64 --debug",
+    "build_linux_x86": "pkg index.js --output ./bin/cpm_linux_x86 --targets node8-linux-x86 --debug",
+    "build_macos_x64": "pkg index.js --output ./bin/cpm_macos_x64 --targets node8-macos-x64 --debug"
+
+  },
+  "keywords": [
+    "cli",
+    "docker"
+  ],
+  "author": "M.Mahrous <m.mahrous.94@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "3.5.1",
+    "commander": "2.15.0",
+    "dockerode": "2.5.3",
+    "fs-extra": "5.0.0",
+    "js-yaml": "3.10.0",
+    "ora": "2.0.0",
+    "request": "2.83.0"
+  },
+  "devDependencies": {
+    "mocha": "4.1.0",
+    "pkg": "4.3.0"
+  }
+}
