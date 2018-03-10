@@ -1,7 +1,7 @@
 {
   "name": "cartridgepm_cli",
   "version": "0.0.1-alpha",
-  "description": "Cartridge Package Manager, is a PM that uses Docker as its main engine, to ensure isolation of the running program from the host OS and the ability to carbon copy your programs from one OS to another",
+  "description": "Cartridge Package Manager, is a PM that uses Docker as its main engine, to ensure isolation of the running program from the host OS and the ability to carbon copy your programs from one OS to another.",
   "main": "index.js",
   "scripts": {
     "build_linux_x64": "pkg index.js --output ./bin/cpm_linux_x64  --targets node8-linux-x64 --debug",
